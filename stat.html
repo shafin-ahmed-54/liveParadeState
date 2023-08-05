@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta>
+    </head>
+    <body>
+        <a href="/"><button class="btnnhome">Home</button></a>
+        <button class="btnn login">Login</button>
+        <br>
+        <p class="title">{{title}}</p>
+        <div class="table"><table>
+            <tr>
+                <td class="yellow col col-1">Cadet No</td>
+                <td class="yellow col col-2">Name</td>
+                <td class="yellow col col-3">Class</td>
+                <td class="yellow col col-4">Form</td>
+                <td class="yellow col col-5">House</td>
+            </tr>
+            {%for j in range(len)%}
+              <tr>
+                <td class="col col-1" data-label="Cadet No">{{data[0][0][j]}}</td>
+                <td class="col col-2" data-label="Name">{{data[0][1][j]['name']}}</td>
+                <td class="col col-3" data-label="Class">{{data[0][1][j]['class']}}</td>
+                <td class="col col-4" data-label="Form">{{data[0][1][j]['form']}}</td>
+                <td class="col col-5" data-label="house">{{data[0][1][j]['house']}}</td>
+              </tr>
+              {%endfor%}
+        </table>
+        </div>
+        <div class="credits">
+            <p><p>&copy; RCC 55TH</p></p>
+        </div>
+        <script src="/static/main.js"></script>
+    </body>
+</html>

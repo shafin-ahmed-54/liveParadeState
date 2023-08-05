@@ -1,0 +1,69 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        {%if admin==0:%}
+        <button class="btnn login" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+        {%elif admin==1:%}
+        <a href="logout"><button class="btnn login">Logout</button></a>
+        {%endif%}
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/login" method="post">
+                <br>
+                <input type="text" placeholder="Enter Username" name="uname" class="uname" required>
+                <br><br>
+                <input type="password" placeholder="Enter Password" name="psw" class="psw" required>
+                <input type="hidden" name="pos" value="th">
+                <br><br>
+                <button class="btnn log" type="submit">Login</button><br><br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="color: black;"> Remember me
+                </label><br>
+                <button class="btnn cls" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+            </form>
+          </div>
+        <a href="/"><button class="btnnhome">Home</button></a>
+        <img class="houselog" src="/static/logoth.png" alt="">
+        <h1>Tariq House</h1>
+        
+        <h3 class="title">House Parade State</h3>
+        <div class="menu">
+
+            <a href="total/tariq" loc="tariq" >
+                <div class="total"> 
+                    <div id="value0">{{total}}</div>
+                    <img height="250px" src="/static/total.png" alt="">
+                </div></a>
+
+            <a href="present/tariq" loc="tariq" >
+            <div class="present"><div class="presc"></div>
+                <div id="value1">{{present}}</div>
+                <img height="250px" src="/static/presentpng.png" alt="">
+            </div></a>
+
+            <a href="hospital/tariq" loc="tariq" >
+            <div class="hospital"><div class="hosc"></div>
+            <div id="value2">{{hospital}}</div>
+                <img height="250px" src="/static/Hospital.png" alt="">
+            </div></a>
+
+            <a href="cmh/tariq" loc="tariq" >
+            <div class="cmh"><div class="cmhc"></div>
+            <div id="value4">{{cmh}}</div>
+                <img height="250px" src="/static/cmh.png" alt="">
+            </div></a>
+
+            <a href="leave/tariq" loc="tariq" >
+            <div class="leave"><div class="leavec"></div>
+            <div id="value3">{{leave}}</div>
+                <img height="250px" src="/static/leave.png" alt="">
+            </div></a>
+
+        </div>
+            <div class="credits">
+                <p><p>&copy; RCC 55TH</p></p>
+            </div>
+        <script src="/static/main.js"></script>
+    </body>
+</html>

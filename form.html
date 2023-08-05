@@ -1,0 +1,68 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <a href="/"><button class="btnnhome">Home</button></a>
+        {%if admin==0:%}
+        <button class="btnn login" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+        {%elif admin==1:%}
+        <a href="logout"><button class="btnn login">Logout</button></a>
+        {%endif%}<br><br>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/login" method="post">
+                <br>
+                <input type="text" placeholder="Enter Username" name="uname" class="uname" required>
+                <br><br>
+                <input type="password" placeholder="Enter Password" name="psw" class="psw" required>
+                <input type="hidden" name="pos" value="form">
+                <input type="hidden" name="from" value="{{loc}}">
+                <br><br>
+                <button class="btnn log" type="submit">Login</button><br><br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="color: black;"> Remember me
+                </label><br>
+                <button class="btnn cls" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+            </form>
+          </div>
+        <h1 id="form" class="titlefn">Form {{formName}}</h1><br>
+        <h3 class="titlefm" >Form Master: {{fm}}</h3><h4 id="formMaster"></h4>
+        <h3 class="title">Form Parade State</h3>
+        <div class="menu">
+
+            <a href="/total/{{at}}" loc="{{at}}">
+                <div class="total"> 
+                    <div id="value0">{{total}}</div>
+                    <img height="250px" src="/static/total.png" alt="">
+                </div></a>
+
+                <a href="/total/{{at}}" loc="{{at}}">
+            <div class="present"><div class="presc"></div>
+                <div id="value1">{{present}}</div>
+                <img height="250px" src="/static/presentpng.png" alt="">
+            </div></a>
+
+            <a href="/hospital/{{at}}" loc="{{at}}">
+            <div class="hospital"><div class="hosc"></div>
+            <div id="value2">{{hospital}}</div>
+                <img height="250px" src="/static/Hospital.png" alt="">
+                <a href="total/kh" loc="kh" >
+            </div></a>
+
+            <a href="/cmh/{{at}}" loc="{{at}}">
+            <div class="cmh"><div class="cmhc"></div>
+            <div id="value4">{{cmh}}</div>
+                <img height="250px" src="/static/cmh.png" alt="">
+            </div></a>
+
+            <a href="/leave/{{at}}" loc="{{at}}">
+            <div class="leave"><div class="leavec"></div>
+            <div id="value3">{{leave}}</div>
+                <img height="250px" src="/static/leave.png" alt="">
+            </div></a>
+
+        </div>
+        <div class="credits">
+            <p><p>&copy; RCC 55TH</p></p>
+        </div>
+</html>

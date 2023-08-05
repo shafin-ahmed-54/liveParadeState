@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "liveparadestate",
+  "private_key_id": "b50178a10812ff6cf5904094f763cd62e4fe5090",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCuJsL2u/rlzyT0\nNEpgDIm8wpW+6KDEbY1/GYaI7fXBcO8cMrTkzMRn83PB2QlfJxC6GYRYyjee6VXd\nT/WMmCin8HaPypvHGlRmAxz9eTDJMZMnW8rCEgJslDuaLLj47tkWMp/fzdNSUD2q\n7zZilOUIaxBevUR2dYl0GRJdwC+rOUIjtxeem7w/cN12mkOt+xUwjYUjjk92gpnP\nRUKLlNZAteEhkcvposT9cDuzLajirkaZDSc3Gl7d1Wka8tAZ0pgUyEe1c12raMvQ\n99uRiVvHA9E6P6KJjjCWrIUkPnxWyKqqL28NzDi9lhQKz19sgYCWZqZ1SQqCfmj2\nLFxeHpLXAgMBAAECggEABWyBtAmc0xc81uZhjndn9lOyMlHS1TjYtw0CvHU/l3Tt\nenI7iQ16zxooPL/BSLJ+Rl9dJ22zVTsvaGIZyzBzEO+fzV+CKV7OhUPpBLsuza1V\nx9Jz2m24n9ZlRPksmrUWk4leylL4FzB49ucu5tujcu0/UihagdpxDOm56Obh61cF\niLpLlbgtytEJPYlNtlIwickv1bdxgWKU813LS9oB/hNonR5U+IiEQzQoJqz1D5Br\n9DkDOVB3lXu0nSIAdZvn9R5rV1VkB7rlt12F0cx8eYAq37suCUG+YS9+JBfPFQ7S\nslnESlm2lRdPaVgylPC/3rdcSl12mE7LvxqhWSYkZQKBgQDVWKIReVRJlsZbl00G\nKikmZgH8PBM5RXYCkxJZ/eWGMKcO/TSVWvjSOD4VVkmOoA69jzi8AcOp/JifSZsL\njVPWTpZ8rCAaV8HhBNdP49i8F+VXHxnoJoCeTlyk4adFUG2Zj5vD3qZZKs33NWh+\nt2nsafq2EkDbmoHhuxJO4w1r9QKBgQDQ+BTnHcxDWfJpAW4gog3dBeJ5tOB7ROht\nXsAx28x/Zh6CMSd/UZhBdsnezoTh+1olW7v5HGFE6xcVCHmrFEL5vPF3a7zXd+N/\nawGgE7m52IO1PFpt9IkzYsIak0MqUOlV2gcipyHvkKdBtRtJZdjH496+C5EZtHOs\nBpW5b/VwGwKBgGrxEdQ2gESe+nEg53AmpBfmXCpmprA3nE7wD+viNDJOov8Fd11C\ni6U8ogoqBZcjrh/g8exz6fOEdbCqwbhJsHOlUxPNaA4sXTgBKDiYmqS2SbShF2hi\nHGi+GPxhTGqXRUkLTmYhbjsWFMZNFEMoh0UFXrHzdmVeDqrrDeNTNwAdAoGBAIzj\n1mQEqSV3zYKSnkeOOz6bqxhXpUo3KWYkDf0Pro7usP8iWPj0cG0iw/Re1STvrNWn\nRdMtGT+4KTXbIvz/ijCK/VqA3y9++3l7Eft1kTEGE7br3CRqTN7CZRA53Xz4VHm3\nqDvq52x34OziSGVyL3iF4DXN4qSsD5kaT3RZUeelAoGAbDq/XWe4rKpur+7zC2YQ\nKPjH2isXv+lw1MPfc4ZHIKF0iEwGrEz6TrJm8+/YutR+eSF+LwNum00bpW8Gw5OI\nQdfaU3cOINunoiGAHfuqGrA+nzrf9wtJzDRPOGIsQB1BM77/mK5RRh1od9x5K1cS\nEy4BhHCQIMSpKckxMgL1uY0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "liveparadestate@appspot.gserviceaccount.com",
+  "client_id": "100311021287604686222",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/liveparadestate%40appspot.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

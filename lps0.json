@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "liveparadestate-2d1f4",
+  "private_key_id": "431b7b94d580558f45613e3c8118b7856857d825",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC9d6n82ISn22yO\nm2okrk2RxKN3UqULhuLDV5dW0E+pOXv+uz7qfgB2syQL5cMaZSLMKV6qOzsIl+aR\nGvxXbKZFdEtDd3/fo6j81NMyjK+9WgClMdFTLZqGdbRuBWLwvO2IOVHWTa9yEify\nXyxakxY2hsZSi3I6jLWb6obpPPyXd6OQttgDP5pJNDlJpTwIOZ2sXHCCWsoTjKsY\n8DKXN/Aadfr9lNPaJ8eGvFCf0QqqBvrbnKtCbC8qDOJV3XG0i8Cp3i30c7Gsm5gG\nWhluSFXlt2IFkHgoAhj/Lx2J8ytqVViuMAJUbNlfPNzHgn1bltd+5s812wPIGYkV\nNvB9y52rAgMBAAECggEAIMbWS+0DCezeO09sjdrvhWOgqdBMyBE2IngBMN4JoetV\nZYxsBnH0z5QPDNXbKjJL0kjn3QgxHrv0ga7K767WltZW/N1r7DrqTY7d2HVZI6cx\nzGIxZbPScydiptPcuWvdpb7QxwOacd/tNDM9v4+JfLZVEcuY38Me2dG5NBk+U09s\nlyIZL5Lceh3XvukwR5KWZYnPUDCTVpC4m5RzYTjvte1s6WOBgYca1NCBf/php4Si\nacz4l8PVCrWcObfpLf/8oA0dnuAo2M+A1c8KIpP/WbLIYKsMJ0Gy7EKmYdnHGLrr\n7bPzcPZcX7cRYoIEqi7YImEFzk3gHR+IQeaw/jLnpQKBgQD/8Kx2MVW/v2sP5i+i\nQgajFVfl5EHo6qpGn+YKwKZKN7W9Vn/XEVMUF5AKR1OBr0bJGdtx4vqYMNwN+9T0\nIphudXlFRNekzOtxhAZmw25Ao2EtyHVIeN/cQnti1kpWFnEKgnHa18w2VmVzZR+Q\n7mHSlVRGRzkGtzc1UseODNOm9QKBgQC9gwKBfASzNzzUmz6dPuFuoBcYIEMAc8q8\nb/vaJeKWV7B47d83OHmPaOkjNi7OoSttkpOdc/tasgEKYMgPm5xllrOnDr5pc8Jn\nK8UEPvwLfSeKePqEYsh0lAXN3GD5TwOewX7hy7q+MkytpEnD/h/6k7hOlAbVFpUM\n0JrryUUOHwKBgQDHR0nBLWCq0Aw4cO4d1HL+gBvUcAmxpSW3n8CqFp5jo0Tqi3M2\nrdKWDlKk7ixjCWqAIpXu8uBTp5dve+mvvVAakXU/Lf8J3lRkKnwhf4FU6uE7mJ1Z\nNGR5R3py1o9CwG571F16HBRxKowLcW1Gl5WrNYJMxh/szrM53Z5rSCl0EQKBgQCo\nWPse33alZYpqK0aiFTvZM+mQCwi6HCKa5rfKACGbAGbJ5jWGLmr+FGoWV4mZEN8t\nRSpQkrlUxg/akkLmaouySv9ohdZsguLNF7q6nOD1q8Y2YmXYuI/tz5igWQbkMWa7\n3pPCLWLElpY7IlhM/TCXPiZZ13GCVb8uVRlqH69ybQKBgEvT5Mv2iesWDPJmXrc+\nElVR3/lV0dlzka16G6fFbjUz00j0oI1qHthizdbzCpMYP9jwwzfDD36WYpxSqfkE\nieiagbY7d8ERKvJQK8svTNrVtKWAFRY3SUePgu+S6rkKXKE7AGc+sg3T6JRtuDJy\n7gsCI6TQ9jwr3+5z2NG6jNtL\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-v9r6n@liveparadestate-2d1f4.iam.gserviceaccount.com",
+  "client_id": "114781058427767024943",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-v9r6n%40liveparadestate-2d1f4.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,95 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta>
+    </head>
+    <body>
+      {%if admin==0:%}
+      <button class="btnn login" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+      {%elif admin==1:%}
+        <a href="logout"><button class="btnn login">Logout</button></a>
+      {%endif%}
+      <div id="id01" class="modal">
+        <form class="modal-content animate" action="/login" method="post">
+            <br>
+            <input type="text" placeholder="Enter Username" name="uname" class="uname" required>
+            <br><br>
+            <input type="password" placeholder="Enter Password" name="psw" class="psw" required>
+            <input type="hidden" name="pos" value="cadet">
+                <input type="hidden" name="from" value="{{loc}}">
+            <br><br>
+            <button class="btnn log" type="submit">Login</button><br><br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="color: black;"> Remember me
+                </label><br>
+            <button class="btnn cls" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+        </form>
+      </div>
+        <a href="/"><button class="btnnhome">Home</button></a>
+        <p class="title">Cadet Detail</p>
+        
+        <h1>Cadet {{cdtdetail['name']}}</h1>
+        <img class="img" src="static/img/{{cdtno}}-{{cdtdetail['name']}}.jpg" onerror='this.style.display = "none"'><br><br>
+        <div class="table"><table id="customers">
+            <tr>
+              <td class="yellow">Cadet No</td>
+              <td>:</td>
+              <td>{{cdtno}}</td>
+            </tr>
+            <tr>
+                <td class="yellow">Class</td>
+                <td>:</td>
+                <td>{{cdtdetail['class']}}</td>
+              </tr>
+              <tr>
+                <td class="yellow">Form</td>
+                <td>:</td>
+                <td> {{cdtdetail['form']}}</td>
+              </tr>
+              <tr>
+                <td class="yellow">House</td>
+                <td>:</td>
+                <td>{{cdtdetail['house']}}</td>
+              </tr>
+              <tr>
+                <td class="yellow">Currently At</td>
+                <td>:</td>
+                {% if cdtdetail['at']=='cmh' %}
+                <td>{{cdtdetail['at'].upper()}}</td>
+                {%else%}
+                <td>{{cdtdetail['at'].capitalize()}}</td>
+                {%endif%}
+              </tr>
+        </table></div>
+        {%if admin==1:%}     
+        <h2>Edit Location To</h2>
+        <div class="change">
+            <form action="/change">
+                <input type="hidden" value={{cdtno}} name="cdtno" id="">
+                {% if cdtdetail['at'].lower()=="present" :%}
+                <input class="btnn" type="submit" name="changed" value="Hospital">
+                <input class="btnn" type="submit" name="changed" value="CMH">
+                <input class="btnn" type="submit" name="changed" value="Leave" >
+	            {% elif cdtdetail['at'].lower()=="hospital" : %}
+                <input class="btnn" type="submit" name="changed" value="Present">
+                <input class="btnn" type="submit" name="changed" value="CMH">
+                <input class="btnn" type="submit" name="changed" value="Leave" >
+                {% elif cdtdetail['at'].lower()=="leave"  :%}
+                <input class="btnn" type="submit" name="changed" value="Present">
+                <input class="btnn" type="submit" name="changed" value="Hospital">
+                <input class="btnn" type="submit" name="changed" value="CMH">
+                {% elif cdtdetail['at'].lower()=="cmh" : %}
+                <input class="btnn" type="submit" name="changed" value="Present">
+                <input class="btnn" type="submit" name="changed" value="Hospital">
+                <input class="btnn" type="submit" name="changed" value="Leave" >
+                {% endif %}
+            </form>
+        </div>
+        {%endif%}
+
+        <div class="credits">
+            <p><p>&copy; RCC 55TH</p></p>
+        </div>
+        <script src="/static/main.js"></script>
+    </body>
+</html>

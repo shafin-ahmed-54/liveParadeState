@@ -1,0 +1,61 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta>
+    </head>
+    <body>
+        <a href="/"><button class="btnnhome">Home</button></a>
+        {%if admin==0:%}
+        <button class="btnn login" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+        {%elif admin==1:%}
+        <a href="logout"><button class="btnn login">Logout</button></a>
+        {%endif%}<br>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/login" method="post">
+                <br>
+                <input type="text" placeholder="Enter Username" name="uname" class="uname" required>
+                <br><br>
+                <input type="password" placeholder="Enter Password" name="psw" class="psw" required>
+                <input type="hidden" name="pos" value="hospital">
+                <input type="hidden" name="from" value="{{loc}}">
+                <br><br>
+                <button class="btnn log" type="submit">Login</button><br><br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="color: black;"> Remember me
+                </label><br>
+                <button class="btnn cls" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+            </form>
+          </div>
+        <p class="title">{{title}}</p>
+        <div class="table"><table>
+            <tr>
+                <td class="yellow col col-1">Cadet No</td>
+                <td class="yellow col col-2">Name</td>
+                <td class="yellow col col-3">Class</td>
+                <td class="yellow col col-4">Form</td>
+                <td class="yellow col col-5">House</td>
+                <td class="yellow col col-6">Detail</td>
+            </tr>
+            
+            {%for j in range(len)%}
+              <tr>
+                <td class="col col-1" data-label="Cadet No">{{data[1][0][j]}}</td>
+                <td class="col col-2" data-label="Name">{{data[1][1][j]['name']}}</td>
+                <td class="col col-3" data-label="Class">{{data[1][1][j]['class']}}</td>
+                <td class="col col-4" data-label="Form">{{data[1][1][j]['form']}}</td>
+                <td class="col col-5" data-label="house">{{data[1][1][j]['house']}}</td>
+                <form name="search" action="{{ url_for('cadet')}}" method="post">
+                <input type="hidden" value={{data[1][0][j]}} name="input" id="">
+                <td><input class="bttn" type="submit" name="input" value="Detail"></td>
+            </form>
+              </tr>
+              {%endfor%}
+              
+        </table>
+        </div>
+        <div class="credits">
+            <p><p>&copy; RCC 55TH</p></p>
+        </div>
+        <script src="/static/main.js"></script>
+    </body>
+</html>

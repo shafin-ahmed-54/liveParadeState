@@ -1,0 +1,136 @@
+<html>
+    <head>
+    <script src="https://kit.fontawesome.com/7c901bcbe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="/"><button class="btnnhome">Refresh</button></a>
+        <video autoplay muted loop id="myVideo" height="540px">
+            <source src="/static/bgv.mp4" type="video/mp4">
+        </video>
+        <div class="box">
+            <form name="search" action="{{ url_for('cadet')}}" method="post">
+                <input type="text" class="input" name="input">
+            </form>
+            <i class="fas fa-search"></i>    
+        </div>
+      
+        <p class="rcc">RAJSHAHI CADET COLLEGE</p>
+        <img class="logorcc" src="/static/logo0.jpg" alt="">
+        {%if admin==0:%}
+        <button class="btnn login" onclick="document.getElementById('id01').style.display='block'" >Login</button>
+        {%elif admin==1:%}
+        <a href="logout"><button class="btnn login">Logout</button></a>
+        {%endif%}
+        <p class="title main">Live Parade State</p>
+        <div class="menu">
+            <a href="total/all" loc="all" >
+                <div class="total"> 
+                    <div id="value0">{{total}}</div>
+                    <img height="250px" src="/static/total.png" alt="">
+                </div>
+            </a>
+        <a href="present/all" loc="all" >
+            <div class="present"> 
+                <div id="value1">{{present}}</div>
+                <img height="250px" src="/static/presentpng.png" alt="">
+            </div>
+        </a>
+
+        <a href="hospital/all" loc="all" >
+            <div class="present"> 
+                <div id="value2">{{hospital}}</div>
+                <img height="250px" src="/static/hospital.png" alt="">
+            </div>
+        </a>
+
+        <a href="cmh/all" loc="all" >
+            <div class="present"> 
+                <div id="value3">{{cmh}}</div>
+                <img height="250px" src="/static/cmh.png" alt="">
+            </div>
+        </a>
+
+        <a href="leave/all" loc="all" >
+            <div class="present"> 
+                <div id="value4">{{leave}}</div>
+                <img height="250px" src="/static/leave.png" alt="">
+            </div>
+        </a>
+      </div>
+    </div><br><br>
+        <div class="house">
+            <a href=kh><button class="btnkh">
+                Khalid<br>House
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+                <span class="fourth"></span>
+              </button></a>
+            <a href=qh><button class="btnqh">
+                Qasim<br>House
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+                <span class="fourth"></span>
+              </button></a>
+            <a href=th><button class="btnth">
+                Tariq<br>House
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+                <span class="fourth"></span>
+              </button></a><br><br>
+        </div><br><br>
+        <div class="forms">
+            <a href="form/viiA"><button class="btnn" at="viiA">VII A</button></a>
+            <a href="form/viiiA"><button class="btnn" at="viiiA">VIII A</button></a>
+            <a href="form/ixA"><button class="btnn" at="ixA">IX A</button></a>
+            <a href="form/xA"><button class="btnn" at="xA">X A</button></a>
+            <a href="form/xiA"><button class="btnn" at="xiA">XI A</button></a>
+            <a href="form/xiiA"><button class="btnn" at="xiiA">XII A</button></a><br><br>
+            <a href="form/viiB"><button class="btnn" at="viiB">VII B</button></a>
+            <a href="form/viiiB"><button class="btnn" at="viiiB">VIII B</button></a>
+            <a href="form/ixB"><button class="btnn" at="ixB">IX B</button></a>
+            <a href="form/xB"><button class="btnn" at="xB">X B</button></a>
+            <a href="form/xiB"><button class="btnn" at="xiB">XI B</button></a>
+            <a href="form/xiiB"><button class="btnn" at="xiiB">XII B</button></a>
+        </div><br><br>
+        
+        <div class="credits">
+            <p><p>&copy; RCC 55TH</p></p>
+        </div>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/login" method="post">
+                <br>
+                <input type="text" placeholder="Enter Username" name="uname" class="uname" required>
+                <br><br>
+                <input type="password" placeholder="Enter Password" name="psw" class="psw" required>
+                <input type="hidden" name="pos" value="index">
+                <br><br>
+                <button class="btnn log" type="submit">Login</button><br><br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="color: black;"> Remember me
+                </label><br>
+                <button class="btnn cls" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button><br><br>
+            </form>
+          </div>
+
+        <script src="/static/main.js"></script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            </script>
+            
+    </body>
+</html>
